@@ -1,0 +1,930 @@
+.jobs {
+  padding: 20px 25px 30px 30px ;
+  background: #f4f4f4;
+  height: 100%;
+  min-height: 87vh
+  }
+.todaysJobs{
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 20px;
+  }
+.jobs span{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;  
+}
+.todaysJobs span{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.7);
+}
+hr {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 1px;
+}
+.jobs .headText {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: start;
+  grid-gap: 15px;
+  align-items: center;
+}
+.jobs .headText span:last-child {
+  color: rgba(0, 0, 0, 0.4);
+}
+.jobsTables {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.jobsTable{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: #3B4B52;
+  padding: 12px 23px;
+}
+
+.jobsTable img {
+  align-self: center;
+}
+.jobsTable p {
+  font-weight: bold;
+  font-size: 36px;
+}
+.jobstableText  {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  text-align: right;
+  display: grid;
+  grid-gap: 5px;
+}
+.jobsTable:hover {
+  color: #ffffff;
+  background: #304B57;;
+  cursor: pointer;
+}
+.jobsTable:hover .jobstableText span{
+  color: #ffffff;
+}
+
+.jobsFilters {
+    background: #FFFFFF;
+    margin-top: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.jobsFiltersLeft {
+    font-family: Asap;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(59, 75, 82, 0.6);
+}
+.jobsFiltersLeft {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.jobsFiltersLeftInfo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    border-right: 1px solid rgba(59, 75, 82, 0.05);;
+    align-self: center;
+    padding: 0 12px 0 20px;
+}
+ /* SELECT !!!!!!!!!!!!!!!!!!*/
+.custom-select-wrapper {
+  position: relative;
+  display: grid;
+  align-self: center;
+  width: 64px;
+  height: 32px;
+ 
+
+color: rgba(48, 75, 87, 0.6);
+}
+.custom-select__trigger {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 4px;
+  align-items: center;
+  padding:  7px 14px;
+  color: #3b3b3b;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.custom-select__trigger span {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(48, 75, 87, 0.6);
+}
+.custom-select__trigger img {
+  display: grid;
+  align-self: center;
+}
+.custom-options {
+  padding: 7px 12px;
+  border: 2px solid rgba(59, 75, 82, 0.05);
+  border-top: 0;
+  background: #fff;
+  z-index: 2;
+}
+
+.custom-options:last-child{
+  border-radius:0 0 4px 4px;
+}
+
+.custom-option {
+  color: rgba(48, 75, 87, 0.6);
+  cursor: pointer;
+ }
+.custom-options:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+/*END OF SELECT !!!!!!!!!!!!!!!!!!*/
+
+.jobsFiltersLeftInformation {
+  display: grid;
+  align-self: center;
+  padding: 16px 0 16px 12px;
+}
+.jobsFiltersRight {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: right;
+}
+.jobsFiltersRightInfo {
+  
+    display: grid;
+    align-items: center;
+    padding: 9px 12px 9px 0;
+    position: relative;
+    align-self: center;
+}
+.jobsFiltersRightInfo input {
+    text-decoration: none;
+    border: 0;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(48, 75, 87, 0.6);
+    padding: 7px 0 7px 14px;
+    outline:none;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+.jobsFiltersRightInfo img {
+    position: absolute;
+    top: 17px;
+    right: 22px;
+}
+.jobsFiltersRightInformation {
+    display: grid;
+    align-items: center;
+    border-left: 1px solid rgba(59, 75, 82, 0.05);;
+    padding: 12px;
+}
+.infoButtons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  
+}
+ .infoButtons button {
+    border: none;
+    outline:none;
+    width: 32px;
+    height: 32px;
+    background: none;
+    cursor: pointer;
+ }
+ 
+.infoButtons .infoButtonsMain {
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  background: #FFFFFF;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: grid;
+  align-content: center;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(48, 75, 87, 0.4);
+}
+.infoButtons .infoButtonsMain img {
+  justify-self: center;
+}
+.infoButtons .infoButtonsMain:hover {
+  background: rgba(48, 75, 87, 0.1);
+  border: none;
+  color: rgba(48, 75, 87, 0.4);
+   
+}
+.infoButtons .arrow {
+  background: rgba(0, 0, 0, 0.05);
+  border: none;
+  
+}
+/* TABLES !!!!!!!!!!!!!!!!!!*/ 
+.progressBar {
+  margin-top: 15px;
+}
+.progressBar .progressTable .progressTableText th {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(59, 75, 82, 0.8);
+  border: none;
+  background: none;
+}
+table {
+   width: 100%; 
+   border-collapse: collapse;
+  
+ }
+.strike {
+  display: inline-block;
+  background: url('../../assets/tableIcon.svg');
+  width: 24px;
+  height: 24px;
+}
+.strike:hover, .active-strike{
+  background:url('../../assets/tableIconHoverStrike.svg'); 
+  cursor: pointer;
+ }
+  
+.jobId {
+  text-decoration-line: underline;
+  color: #304B57;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  }
+ 
+.phone {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: left;
+  grid-gap: 10px;
+}
+.iconPhone {
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/jobsPhone.svg');
+}
+.iconPhone:hover{
+  background: url('../../assets/jobsPhoneHover.svg');
+  cursor: pointer;
+  
+}
+
+.tags {
+   display: grid;
+   justify-content: left;
+   
+}
+.oneTag {
+  padding: 4px 6px;
+  background: #2AB986;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+   
+}
+
+.priority {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: right;
+  grid-gap: 10px;
+  align-items: center;
+}
+.priority span {
+  font-weight: bold;
+}
+.circleSmall {
+  background: #000000;
+  width: 4px;
+  height: 4px;
+  border-radius: 5px;
+}
+.circleBig {
+  background:   #F50909;;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+th {
+  background: transparent;
+  padding:15px;
+  text-align: start;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(59, 75, 82, 0.6);
+  border-left: 1px solid rgba(59, 75, 82, 0.05);
+}
+th:first-child {
+ justify-self: center;
+ text-align: center;
+}
+tr:nth-child(2) th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+tr:nth-child(2) th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+tr:last-child th:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+tr:last-child th:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+th:last-child{
+  justify-content: right;
+  justify-self: right;
+  text-align: right;
+   
+}
+.activelink{
+  background: #304B57;
+   
+}
+.activelink span, .activelink p{
+  color: white;
+}
+
+.progressTableInfo:nth-child(2) th  {
+  border-top: none;
+}
+
+.progressTableInfo:last-child th {
+  border-bottom: none;
+}
+
+.progressTableInfo th:first-child  {
+  border-left: none;
+}
+
+.progressTableInfo th:last-child {
+  border-right: none;
+}
+
+.update-job-back{ 
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.update-job-back .close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0, 0.5);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap {
+  justify-self: center;
+  align-self: center;
+  z-index: 2;
+}
+
+.update-job-back .update-job-popap .popap-header {
+  border-radius: 10px 10px 0 0;
+  background: #304B57;
+  padding: 20px 17px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto 1fr;
+  grid-gap: 9px;
+  box-sizing: border-box;
+}
+
+.update-job-back .update-job-popap .popap-header img, .update-job-back .update-job-popap .popap-header span {
+  align-self: center;
+}
+.update-job-back .update-job-popap .popap-header span {
+  font-family: Asap;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.update-job-back .update-job-popap .popap-header .title-header {
+  font-weight: bold;
+  color: white;
+}
+
+.update-job-back .update-job-popap .popap-header .id-header {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.update-job-back .update-job-popap .popap-header img:last-child{
+  justify-self: end;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content{
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar{
+  padding-top: 20px;
+  display: grid;
+  background-color: white;
+  border-radius: 0px 0px 0px 10px;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar .menu{
+  align-self: start;
+  display: grid;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar div:last-child{
+  align-self: end;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 8px;
+  background: rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  padding: 0 28px 0 0;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar .menu button{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(48, 75, 87, 0.4);
+  background: white;
+  border: none;
+  text-align: left;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar .menu button:hover, .update-job-back .update-job-popap .content .popap-sidebar .menu .active {
+  background: rgba(48, 75, 87, 0.05);
+  border-right: 3px solid #304B57;
+  color:  #304B57;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar div:last-child button{
+  background: transparent;
+  border-radius: 0px 0px 0px 10px;
+  border: none;
+  cursor: pointer;
+  padding: 30px 0 30px 20px;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #304B57;
+  text-align: left;
+}
+
+.update-job-back .update-job-popap .content .popap-sidebar div:last-child img{
+  align-self: center;
+  justify-self: start;
+}
+
+.update-job-back .update-job-popap .content .popap-form{
+  padding: 20px;
+  background: #F4F4F4;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0 0 10px 0;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled{ 
+  padding: 24px 20px;
+  background: white;
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled span{ 
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  color: #304B57;
+  align-self: center;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .settings{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-self: end;
+  align-self: center;
+  grid-gap: 10px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .date{
+  display: grid;
+  border: 2px solid rgba(48, 75, 87, 0.1);
+  padding: 10px;
+  grid-template-columns: auto auto;
+  grid-gap: 28px;
+  border-radius: 4px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .date span{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(48, 75, 87, 0.7);
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar{
+  background: #304B57;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: grid;
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  z-index: 1;
+}
+
+.calendar-ico {
+  background: url('../../assets/calendar-ico.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.active-calendar-photo{
+  background: url('../../assets/active_calend.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.timestamp-ico{
+  background: url('../../assets/time.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.active-timestamp-photo{
+  background: url('../../assets/active_time.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .calendar-head{
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .calendar-head .leftCalendar{
+  width: 100%;
+  height: 50px;
+  background: url('../../assets/left_calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .calendar-head .leftCalendar:hover{
+  background: url('../../assets/hover_left_calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .calendar-head .rightCalendar{
+  width: 100%;
+  height: 50px;
+  background: url('../../assets/right_calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .calendar-head .rightCalendar:hover{
+  background: url('../../assets/hover_right_calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .day-of-week {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .calendar-head span, .update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .day-of-week span{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .numbers{
+  padding: 10px 20px 20px 20px;
+  display: grid;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .numbers .week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .numbers .week .cell {
+  display: grid;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .numbers .week .activeDay {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .numbers .week span{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  justify-self: center;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .calendar .numbers .week .cell:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time {
+  padding: 20px;
+  background: #304B57;
+  display: grid;
+  grid-gap: 14px;
+  border-radius: 10px;
+  position: absolute;
+  right: 20px;
+  top: 80px;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time .input-time{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time .input-time span{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time .input-time div {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 10px 13px;
+  display: grid;
+  align-content: center;
+  cursor: pointer;
+  width: 50px;
+  box-sizing: border-box;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time button {
+  background: #2AB986;
+  padding: 12px;
+  border-radius: 4px;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time .input-time input{
+  padding: 10px;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 70px;
+  background: transparent;
+}
+
+.update-job-back .update-job-popap .content .popap-form .shcheduled .popap-time .input-time input::placeholder{
+ color: white;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info, .update-job-back .update-job-popap .content .popap-form .money {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status, .update-job-back .update-job-popap .content .popap-form .money .status{
+  padding: 20px;
+  display: grid;
+  grid-gap: 14px;
+  background: white;
+  border-radius: 4px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status span, .update-job-back .update-job-popap .content .popap-form .money .status span, .update-job-back .update-job-popap .content .popap-form .money .status .block input{
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #304B57;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .input, .update-job-back .update-job-popap .content .popap-form .money .status .block input{
+  background: #FFFFFF;
+  border: 2px solid rgba(48, 75, 87, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .popap-status {
+  display: none;
+  position: absolute;
+  width: 102%;
+  background: white;
+  top: 42px;
+  left: -2px;
+  z-index: 1;
+  position: absolute;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .active-update-status-popap{
+  display: grid;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .popap-status div {
+  border: 2px solid rgba(48, 75, 87, 0.1);
+  border-top: none;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .popap-status div:last-child{
+  border-radius: 0 0 4px 4px;
+}
+
+
+.update-job-back .update-job-popap .content .popap-form .info .status .popap-status div span{
+  font-family: Asap;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  color: rgba(48, 75, 87, 0.7);
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .input img, .update-job-back .update-job-popap .content .popap-form .shcheduled .date img{
+  justify-self: end;
+  align-self: center;
+}
+
+.update-job-back .update-job-popap .content .popap-form .info .status .input span, .update-job-back .update-job-popap .content .popap-form .money .status .block input{
+  font-weight: 600;
+  color: rgba(48, 75, 87, 0.7);
+}
+
+.update-job-back .update-job-popap .content .popap-form .money .status{
+  grid-template-columns: 1fr 1fr;
+}
+
+.update-job-back .update-job-popap .content .popap-form .money .status .block{
+  display: grid;
+  grid-gap: 14px;
+}
+
+.update-job-back .update-job-popap .content .popap-form .money .status .block input{
+  justify-self: start;
+  width: 100px;
+  box-sizing: border-box;
+}
+
+.update-job-back .update-job-popap .content .popap-form .save {
+  background: #2AB986;
+  border-radius: 4px;
+  padding: 12px 0;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+button:focus, input:focus{
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+
+.openUpdate{
+  display: grid;
+}
+ 
+ 
+ 
+  
+ 

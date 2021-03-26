@@ -1,0 +1,135 @@
+.sidebar {
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    top: 60px;
+    background: #FFFFFF;
+}
+.sidebar-admin {
+    text-align: center;
+    padding: 23px 55px;
+    display: grid;
+    grid-gap: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+}
+
+.sidebar-admin img{
+    justify-self: center;
+}
+
+.sidebar-admin .name {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #3B4B52;
+}
+.sidebar-admin .admin {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.3);
+
+}
+.sidebar-items {
+    display: grid;
+     
+    
+}
+.sidebar-items-item {
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05); 
+}
+.top {
+     
+     padding: 0 30px;
+}
+
+.sidebar-items-item a {
+    font-family: Asap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.8);
+    display: inline-flex;
+    margin-top: 15px;
+}
+a {
+    text-decoration: none;
+}
+.sidebar-items-item:hover a {
+    color: #FFFFFF;
+}
+
+.sidebar-items-item .dashboard-ico {
+    background: url('../../../assets/Dashboard_hover.svg');
+}
+
+.sidebar-items-item:hover .dashboard-ico, .active-link .sidebar-items-item .dashboard-ico{
+    background-image: url('../../../assets/Dashboard.svg');
+}
+
+.sidebar-items-item:hover .calls-ico, .active-link .sidebar-items-item .calls-ico{
+    background-image: url('../../../assets/Calls_hover.svg');
+  }
+  
+.sidebar-items-item .calls-ico {
+    background: url('../../../assets/Calls.svg');
+}
+
+.sidebar-items-item:hover .molot-ico, .active-link .sidebar-items-item .molot-ico{
+    background-image: url('../../../assets/Molot_hover.svg');
+  }
+  
+.sidebar-items-item .molot-ico {
+    background: url('../../../assets/Molot.svg');
+}
+
+.sidebar-items-item:hover .user2-ico, .active-link .sidebar-items-item .user2-ico{
+    background-image: url('../../../assets/user2_hover.svg');
+  }
+  
+.sidebar-items-item .user2-ico {
+    background: url('../../../assets/user2.svg');
+}
+
+.sidebar-items-item:hover .client-ico, .active-link .sidebar-items-item .client-ico{
+    background-image: url('../../../assets/GroupOfPeople_hover.svg');
+  }
+  
+.sidebar-items-item .client-ico {
+    background: url('../../../assets/GroupOfPeople.svg');
+}
+
+.sidebar-items-item .task-ico {
+    background: url('../../../assets/TaskManager.svg');
+}
+
+.sidebar-items-item:hover .task-ico, .active-link .sidebar-items-item .task-ico{
+    background-image: url('../../../assets/TaskManager_hover.svg');
+  }
+
+.sidebar-items-item .ico{
+    background-size: 18px 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 19px;
+}
+
+
+.sidebar-items-item:hover {
+    background: #304B57;
+    cursor: pointer;
+}
+
+.active-link{
+    background: #304B57;
+  }
+  
+  .active-link .sidebar-items-item a{
+    color: white!important;
+  }

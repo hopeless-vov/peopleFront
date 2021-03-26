@@ -1,0 +1,209 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background-color: #304B57;
+    display: grid;
+    z-index: 2;
+    
+}
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 18px;
+}
+.navbar-left span {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px; 
+    margin-left: 250px;
+}
+.navbar-right {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 33px;  
+    cursor: pointer;
+}
+.navbar-right {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+}
+
+.navbar-right-input input {
+    text-decoration: none;
+    border: 0;
+    width: 260px;
+    background: #516771;
+    border-radius: 4px;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 9px 0 10px 22px;
+    outline:none;
+}
+
+.navbar-right-input img {
+    position: absolute;
+    top: 12px;
+    right: 17px;
+}
+
+.navbar-right-input{
+    position: relative;
+}
+
+.navbar-right-icons {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.navbar-right-icons img{
+    align-self: center;
+    cursor: pointer;
+}
+
+.navbar-right-icons img:hover{
+  opacity: 0.4;
+}
+
+.navbar-right-input input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.navbar .closed{
+    right: -500px;
+    transition: .3s;
+}
+
+.navbar .active{
+    right: 26px!important;
+    transition: .3s;
+}
+
+.navbar .popap{
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 84px;
+    z-index: 1;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+  }
+
+  .navbar .notification {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 20px;
+    grid-gap: 54px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  }
+
+  .navbar .popap .li {
+    padding: 12px 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .navbar .popap .li span{
+    justify-self: start;
+  }
+
+  .navbar .popap .li img{
+    align-self: center;
+  }
+
+  .navbar .popap .li:hover{
+    background: rgba(0, 0, 0, 0.02);
+  }
+
+  .navbar .popap .notification .li {
+    padding: 0;
+    cursor: default;
+  }
+
+  .navbar .popap .notification .li:hover {
+    background: white;
+  }
+
+  .navbar .popap .li span{
+    font-weight: 500;
+    font-size: 18px;
+    color: #3B4B52;
+  }
+
+  .navbar .popap .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .navbar .popap .switch input {
+    display:none;
+  }
+  
+  .navbar .popap .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border: 2px solid rgba(60, 75, 82, 0.4);
+    -webkit-transition: .4s;
+    transition: .3s;
+  }
+  
+  .navbar .popap .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    right: 12px;
+    top: 2px;
+    background-color: rgba(60, 75, 82, 0.4);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .navbar .popap input:checked + .slider {
+    background-color: #3C4B52;
+  }
+  
+  .navbar .popap .navbar .popap input:focus + .slider {
+    box-shadow: 0 0 1px white;
+  }
+  
+  .navbar .popap input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+    background-color: white
+  }
+  
+  /* Rounded sliders */
+  .navbar .popap .slider.round {
+    border-radius: 34px;
+  }
+  
+  .navbar .popap .slider.round:before {
+    border-radius: 50%;
+  }

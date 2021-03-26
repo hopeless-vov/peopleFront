@@ -1,0 +1,41 @@
+.allUsers .block {
+    max-width: 970px;
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    gap: 30px;
+    padding-bottom: 50px; 
+  }
+.allUsers .block  .blockItem {
+    display: grid;
+    border: 1px solid #304B57;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+  }
+.allUsers .block  .blockItem .header span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(222, 226, 230);
+    transition: 1s;
+  }
+.allUsers .block  .blockItem .header {
+    display: grid;
+    padding: 60px 0;
+    background-color: #304B57;
+    transition: 1s;
+  }
+.allUsers .block  .blockItem .header:hover {
+    background-color: #497283;
+    transition: 1s;
+    span {
+      font-size: 20px;
+      transition: 1s;
+    }
+  }
+.allUsers .block  .blockItem .body {
+    padding: 30px;  
+  }
+.allUsers .block  .blockItem .body span {
+    font-size: 24px;
+  }

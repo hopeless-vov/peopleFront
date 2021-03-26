@@ -1,0 +1,74 @@
+.userPosts {
+  display: grid;
+  gap: 20px;
+}
+span {
+  text-align: center;
+  font-family: Asap;
+  font-style: normal;
+}
+.userPosts h1 {
+  text-align: center;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+} 
+.userPosts .block {
+  max-width: 970px;
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  gap: 30px;
+  padding-bottom: 50px;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+.userPosts .block  .blockItem {
+  display: grid;
+  border: 1px solid #304B57;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+}
+.userPosts .block  .blockItem .header span {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(222, 226, 230);
+  transition: 1s;
+}
+.userPosts .block  .blockItem .header {
+  display: grid;
+  padding: 60px 0;
+  background-color: #304B57;
+  transition: 1s;
+}
+.userPosts .block  .blockItem .header:hover {
+  background-color: #497283;
+  transition: 1s;
+  span {
+    font-size: 20px;
+    transition: 1s;
+  }
+}
+.userPosts .block  .blockItem .body {
+  padding: 30px;
+  display: grid;
+  gap: 10px;
+  text-align: left;
+  justify-items: left;
+}
+.userPosts .block  .blockItem .body span:first-child {
+  font-size: 24px;
+}
+.userPosts .block  .blockItem .body button {
+  padding: 7px 20px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 7px;
+  background-color: #ec002b;
+  border: none;
+  align-self: end;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}

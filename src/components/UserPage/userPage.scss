@@ -1,0 +1,88 @@
+.userPage {
+    display: grid;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+.userPage h1 {
+    text-align: center;
+    font-family: Asap;
+    font-style: normal;
+    font-weight: bold;
+}
+.userPage .block {
+    max-width: 970px;
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    gap: 30px;
+    padding-bottom: 50px; 
+  }
+.userPage .block  .blockItem {
+    display: grid;
+    border: 1px solid #304B57;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+  }
+.userPage .block  .blockItem .header span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(222, 226, 230);
+    transition: 1s;
+  }
+.userPage .block  .blockItem .header {
+    display: grid;
+    padding: 60px 0;
+    background-color: #304B57;
+    transition: 1s;
+  }
+.userPage .block  .blockItem .header:hover {
+    background-color: #497283;
+    transition: 1s;
+    span {
+      font-size: 20px;
+      transition: 1s;
+    }
+  }
+.userPage .block  .blockItem .body {
+    padding: 30px;  
+    display: grid;
+    gap: 10px;
+    justify-content: left;
+    justify-items: left ;
+  }
+.userPage .block  .blockItem .body span {
+    font-size: 24px;
+  }
+.userPage .post {
+    display: grid;
+    gap: 20px;
+    justify-items: center; 
+    width: 100%;
+    margin: 0px auto;
+}
+.userPage .post .item {
+    display: grid;
+    gap: 10px; 
+}
+.userPage .post .item span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.userPage .post .item input {
+    width: 100%;    
+    width: 600px;
+    padding: 10px 0px 10px 20px;
+    font-size: 18px;
+}  
+.userPage .post button {
+    font-size: 18px;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #497283;
+    cursor: pointer;
+    outline: none;
+}
